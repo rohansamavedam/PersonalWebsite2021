@@ -6,16 +6,16 @@ import userData from '../../MyDetails';
 
 function About() {
   return (
-      <div style={{marginTop: "60px", paddingBottom: "60px", marginBottom: "0px", height: "auto"}}>
-          <div style={{backgroundColor: "#8e9aaf", height: "100%", width: "400px", position: "absolute"}}>
+      <div style={{marginTop: "60px", paddingBottom: "60px", marginBottom: "0px", height: "auto", backgroundColor: userData.theme.backgroundColor}}>
+          <div style={{backgroundColor: userData.theme.themeColor, width: "400px", height: "100%", position: "absolute"}}>
           </div>
           <Container style={{ display: "block", textAlign:"center", paddingBottom: "60px"}} >
             <Row className="justify-content-md-center">
                 <Col sm lg="4" style={{marginTop: "60px"}}>
-                    <div style={{textAlign: "center", height: "auto", width: "320px", backgroundColor: "white", boxShadow: "0px 3px 15px rgba(0,0,0,0.2)", display: "block", marginLeft: "auto", marginRight: "auto"}}>
+                    <div style={{textAlign: "center", height: "auto", width: "320px", backgroundColor: userData.theme.cardColor, boxShadow: "0px 3px 15px rgba(0,0,0,0.2)", display: "block", marginLeft: "auto", marginRight: "auto"}}>
                         <img src={ProfilePicture} width="170" height="170" alt="profile-rohan" style={{borderRadius: "50%", marginTop: "60px"}} />
-                        <h4 style={{fontFamily: "Bungee", marginTop: "20px", paddingTop: "25px", paddingLeft: "30px", paddingRight: "30px", paddingBottom: "7px", color: "#393D3F"}}>{userData.aboutMe.firstName} {userData.aboutMe.lastName}</h4>
-                        <p style={{fontSize: "17px", fontFamily: "Bungee Hairline", paddingBottom: "10px", paddingLeft: "10px", paddingRight: "10px"}}><strong>{userData.aboutMe.userTitle}</strong></p>
+                        <h4 style={{fontFamily: "Bungee", marginTop: "20px", paddingTop: "25px", paddingLeft: "30px", paddingRight: "30px", paddingBottom: "7px", color: userData.theme.headingTextColor}}>{userData.aboutMe.firstName} {userData.aboutMe.lastName}</h4>
+                        <p style={{fontSize: "17px", fontFamily: "Bungee Hairline", paddingBottom: "10px", paddingLeft: "10px", paddingRight: "10px", color: userData.theme.subHeadingTextColor}}><strong>{userData.aboutMe.userTitle}</strong></p>
                         <hr style={{marginTop: "25px"}}/>
                         <Row style={{paddingBottom: "0px"}}>
                             <Col></Col>
@@ -31,11 +31,11 @@ function About() {
                     </div>
                 </Col>
                 <Col sm lg="7" md="7" sm="7" style={{textAlign: "left", marginTop: "60px"}}>
-                    <h4 style={{fontFamily: "Bungee", marginTop: "15px", padding: "10px", color: "#393D3F"}}>About Me</h4>
-                    <p style={{padding: "10px", fontSize: "20px", fontFamily: "Karla"}}>
+                    <h4 style={{fontFamily: "Bungee", marginTop: "15px", padding: "10px", color: userData.theme.headingTextColor}}>About Me</h4>
+                    <p style={{padding: "10px", fontSize: "20px", fontFamily: "Karla", color: userData.theme.bodyTextColor}}>
                         {userData.aboutMe.paragraphOne}
                     </p>
-                    <p style={{padding: "10px", fontSize: "20px", fontFamily: "Karla"}}>
+                    <p style={{padding: "10px", fontSize: "20px", fontFamily: "Karla", color: userData.theme.bodyTextColor}}>
                         {userData.aboutMe.paragraphTwo}
                     </p>
                 </Col>

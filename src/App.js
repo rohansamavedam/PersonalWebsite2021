@@ -14,7 +14,7 @@ function App() {
     <div className="App" >
       <Router>
         <div style={{ minHeight: "85vh"}}>
-          <Navbar expand="lg" fixed="top" style={{backgroundColor: "#ffffff", boxShadow: "0px 3px 15px rgba(0,0,0,0.2)"}} className="NavBar">
+          <Navbar expand="lg" fixed="top" style={{backgroundColor: userData.theme.navbarColor, boxShadow: "0px 3px 15px rgba(0,0,0,0.2)"}} className="NavBar">
                   <NavLink to="/" style={{color: "black", marginRight: "15px"}}><Navbar.Brand style={{color: userData.theme.headingTextColor}}>{userData.aboutMe.firstName}-{userData.aboutMe.lastName}</Navbar.Brand></NavLink>
                   <Navbar.Toggle aria-controls="basic-navbar-nav" />
                   <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
@@ -44,18 +44,18 @@ function App() {
                 </Route>
               </Switch>
         </div>
-        <footer style={{backgroundColor: "white", position: "relative", height: "auto", width: "100%", boxShadow: "0px 3px 15px rgba(0,0,0,0.2)", bottom: "0"}}>
+        <footer style={{backgroundColor: userData.theme.footerColor, position: "relative", height: "auto", width: "100%", boxShadow: "0px 3px 15px rgba(0,0,0,0.2)", bottom: "0"}}>
           <Container fluid>
             <Row>
-              <Col><p style={{fontFamily: "Bungee Hairline", padding: "30px", marginTop: "25px"}}><strong>&#169; 2021 by Krishna Rohan Samavedam.</strong></p></Col>
+              <Col><p style={{fontFamily: "Bungee Hairline", padding: "30px", marginTop: "25px", color: userData.theme.subHeadingTextColor}}><strong>&#169; 2021 by Krishna Rohan Samavedam.</strong></p></Col>
               <Col>
                 <Row style={{padding: "22px"}}>
                   <Col style={{textAlign: "center", fontFamily: "Bungee Hairline"}}>
-                    <p><u><strong>Write</strong></u></p>
-                    <a href={"mailto:" + userData.aboutMe.email} style={{color: "black"}}>{userData.aboutMe.email}</a>
+                    <p style={{color: userData.theme.subHeadingTextColor}}><u><strong>Write</strong></u></p>
+                    <a href={"mailto:" + userData.aboutMe.email} style={{color: userData.theme.subHeadingTextColor}}>{userData.aboutMe.email}</a>
                   </Col>
                   <Col style={{textAlign: "center", fontFamily: "Bungee Hairline"}}>
-                    <p><u><strong>Follow</strong></u></p>
+                    <p style={{color: userData.theme.subHeadingTextColor}}><u><strong>Follow</strong></u></p>
                     <p style={{fontSize: "20px", marginTop: "-6px"}}>
                       <a href={userData.aboutMe.mediumUrl} target="blank" style={{color: userData.theme.headingTextColor}}><FaMediumM/></a> &nbsp; 
                       <a href={userData.aboutMe.githubUrl} target="blank" style={{color: userData.theme.headingTextColor}}><FaGithub/></a> &nbsp; 

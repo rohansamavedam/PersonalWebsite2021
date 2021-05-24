@@ -16,12 +16,12 @@ function Projects() {
                         userData.projects.map((value, index) => {
                             const navurl = "/dp/" + index;
                         return <Col lg="6" style={{marginTop: "40px"}} key={index}>
-                                <div style={{ height: "auto", backgroundColor: "white", boxShadow: "0px 3px 15px rgba(0,0,0,0.2)", display: "block", marginLeft: "auto", marginRight: "auto"}}>
+                                <div style={{ height: "auto", backgroundColor: userData.theme.cardColor, boxShadow: "0px 3px 15px rgba(0,0,0,0.2)", display: "block", marginLeft: "auto", marginRight: "auto"}}>
                                     <Row>
                                         <Col>
-                                            <h5 style={{fontFamily: "Bungee", paddingTop: "20px", paddingLeft: "20px", paddingRight: "20px", color: "#393D3F"}}>
+                                            <h5 style={{fontFamily: "Bungee", paddingTop: "20px", paddingLeft: "20px", paddingRight: "20px", color: userData.theme.headingTextColor}}>
                                                 {value.title}
-                                                <p style={{fontSize: "17px", fontFamily: "Bungee Hairline", paddingLeft: "10px", paddingRight: "10px"}}><strong>
+                                                <p style={{fontSize: "17px", fontFamily: "Bungee Hairline", paddingLeft: "10px", paddingRight: "10px", color: userData.theme.subHeadingTextColor}}><strong>
                                                 [{value.subTitle}]</strong></p>
                                             </h5>
                                         </Col>
@@ -52,8 +52,8 @@ function Projects() {
                                         <img src={value.imageSrcOne} alt="visual representation of project" style={{marginTop: "-120px", marginLeft: "-40px"}}/>
                                     </div>
                                     <div style={{paddingLeft: "20px", paddingRight: "20px", paddingBottom: "10px", fontFamily: "Karla", fontSize: "17px"}}>
-                                        <p>{value.shortDescription}</p>
-                                        <p><u>Tech Stack</u>: {value.techStack}</p>
+                                        <p style={{color: userData.theme.bodyTextColor}}>{value.shortDescription}</p>
+                                        <p style={{color: userData.theme.bodyTextColor}}><u>Tech Stack</u>: {value.techStack}</p>
                                     </div>
                                 </div>
                             </Col>
