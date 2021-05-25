@@ -1,14 +1,13 @@
 const userData = {
     theme: {
-        bodyTextColor: "red",
-        headingTextColor: "green",
-        subHeadingTextColor: "blue",
-        // default theme color (#8e9aaf) gray blue
-        themeColor: "#0D1821", 
-        backgroundColor: "pink",
-        navbarColor: "orange",
-        footerColor: "brown",
-        cardColor: "skyblue"
+        bodyTextColor: "#edf2f4",
+        headingTextColor: "#e84545",
+        subHeadingTextColor: "#edf2f4",
+        themeColor: "#2b2d42", 
+        backgroundColor: "#2b2d42",
+        navbarColor: "#322f3d",
+        footerColor: "#322f3d",
+        cardColor: "#3c415c"
 
     },
     aboutMe: {
