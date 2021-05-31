@@ -1,4 +1,7 @@
-const userData = {
+import React, {useContext} from 'react';
+import Context from './store/context';
+
+const UserData = {
     theme: {
         bodyTextColor: "#edf2f4",
         headingTextColor: "#e84545",
@@ -8,7 +11,6 @@ const userData = {
         navbarColor: "#322f3d",
         footerColor: "#322f3d",
         cardColor: "#3c415c"
-
     },
     aboutMe: {
         firstName: "Rohan",
@@ -26,7 +28,7 @@ const userData = {
             title: "Spartan Books",
             subTitle: "Full Stack Web Application",
             shortDescription: "An online used book store platfrom that allows users to buy and sell textbooks.",
-            moreInfoExists: false,
+            moreInfoExists: true,
             longDescriptionParagraphOne: "",
             longDescriptionParagraphTwo: "",
             techStack: "Node, React, Axios, Bootstrap, MongoDB",
@@ -158,4 +160,4 @@ const userData = {
         ]
 }
 
-export default userData;
+export default UserData;

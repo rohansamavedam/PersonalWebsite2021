@@ -1,4 +1,6 @@
 import './App.css';
+import { useContext, useState } from 'react';
+import Context from './store/context';
 import { Navbar, Nav, Container, Row, Col } from 'react-bootstrap';
 import { Switch, Route, BrowserRouter as Router, NavLink } from "react-router-dom";
 import About from './Pages/About/About';
@@ -6,10 +8,47 @@ import Projects from './Pages/Projects/Projects';
 import Resume from './Pages/Resume/Resume';
 import DynamicProject from './Pages/DynamicProject/DynamicProject';
 import Contact from './Pages/Contact/Contact';
-import { FaLinkedinIn, FaGithub, FaMediumM } from 'react-icons/fa';
+import { FaLinkedinIn, FaGithub, FaMediumM, FaAdjust } from 'react-icons/fa';
 import userData from "./MyDetails";
 
+const lightTheme = {
+  bodyTextColor: "black",
+  headingTextColor: "black",
+  subHeadingTextColor: "black",
+  themeColor: "#ffb4a2", 
+  backgroundColor: "white",
+  navbarColor: "white",
+  footerColor: "white",
+  cardColor: "white"
+}
+
+const darkTheme = {
+  bodyTextColor: "#edf2f4",
+  headingTextColor: "#e84545",
+  subHeadingTextColor: "#edf2f4",
+  themeColor: "#2b2d42", 
+  backgroundColor: "#2b2d42",
+  navbarColor: "#322f3d",
+  footerColor: "#322f3d",
+  cardColor: "#3c415c"
+}
+
 function App() {
+
+  const [state, setState] = useState({themeMode: 'dark'})
+
+  const toggleDarkTheme = () => {
+    console.log("here")
+    userData.theme = darkTheme
+    setState({themeMode: 'dark'})
+  }
+  
+  const toggleLightTheme = () => {
+    console.log("now here")
+    userData.theme = lightTheme
+    setState({themeMode: 'light'})
+  }
+
   return (
     <div className="App" >
       <Router>
@@ -23,6 +62,11 @@ function App() {
                           <NavLink to="/projects" style={{color: userData.theme.headingTextColor, marginRight: "15px", padding: "10px"}} activeStyle={{backgroundColor: userData.theme.themeColor, borderRadius: "2px"}}>Projects</NavLink>
                           <NavLink to="/resume" style={{color: userData.theme.headingTextColor, marginRight: "15px", padding: "10px"}} activeStyle={{backgroundColor: userData.theme.themeColor, borderRadius: "2px"}}>Resume</NavLink>
                           <NavLink to="/contact" style={{color: userData.theme.headingTextColor, marginRight: "15px", padding: "10px"}} activeStyle={{backgroundColor: userData.theme.themeColor, borderRadius: "2px"}}>Contact</NavLink>
+                          <button onClick={ () => {
+                            state.themeMode === 'dark'
+                            ? toggleLightTheme()
+                            : toggleDarkTheme() }
+                        } style={{color: userData.theme.headingTextColor, marginRight: "15px", padding: "10px", border: "none", backgroundColor: userData.theme.navbarColor }}><FaAdjust/></button>
                       </Nav>
                   </Navbar.Collapse>
               </Navbar>

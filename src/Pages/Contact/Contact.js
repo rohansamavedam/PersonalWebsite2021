@@ -19,28 +19,28 @@ function Contact() {
                                         <Form>
                                             <Form.Row>
                                                 <Col>
-                                                <Form.Control style={{backgroundColor: userData.theme.navbarColor, color: "white", border: "none"}} placeholder="First name" />
+                                                <Form.Control style={{backgroundColor: userData.theme.navbarColor, color: "white", border: "1px solid grey"}} placeholder="First name" />
                                                 </Col>
                                                 <Col>
-                                                <Form.Control style={{backgroundColor: userData.theme.navbarColor, color: "white", border: "none"}} placeholder="Last name" />
-                                                </Col>
-                                            </Form.Row>
-                                            <br></br>
-                                            <Form.Row>
-                                                <Col>
-                                                    <Form.Control style={{backgroundColor: userData.theme.navbarColor, color: "white", border: "none"}} placeholder="Email" />
+                                                <Form.Control style={{backgroundColor: userData.theme.navbarColor, color: "white", border: "1px solid grey"}} placeholder="Last name" />
                                                 </Col>
                                             </Form.Row>
                                             <br></br>
                                             <Form.Row>
                                                 <Col>
-                                                    <Form.Control style={{backgroundColor: userData.theme.navbarColor, color: "white", border: "none"}} placeholder="Subject" />
+                                                    <Form.Control style={{backgroundColor: userData.theme.navbarColor, color: "white", border: "1px solid grey"}} placeholder="Email" />
                                                 </Col>
                                             </Form.Row>
                                             <br></br>
                                             <Form.Row>
                                                 <Col>
-                                                    <Form.Control style={{backgroundColor: userData.theme.navbarColor, color: "white", border: "none"}} as="textarea" rows={10} placeholder="Message"/>
+                                                    <Form.Control style={{backgroundColor: userData.theme.navbarColor, color: "white", border: "1px solid grey"}} placeholder="Subject" />
+                                                </Col>
+                                            </Form.Row>
+                                            <br></br>
+                                            <Form.Row>
+                                                <Col>
+                                                    <Form.Control style={{backgroundColor: userData.theme.navbarColor, color: "white", border: "1px solid grey"}} as="textarea" rows={10} placeholder="Message"/>
                                                 </Col>
                                             </Form.Row>
                                             <br></br>
