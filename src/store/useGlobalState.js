@@ -1,5 +1,4 @@
 import {useState} from 'react';
-import { type } from 'os';
 
 const useGlobalState = () => {
     const [state, setState] = useState({themeMode: 'dark'})

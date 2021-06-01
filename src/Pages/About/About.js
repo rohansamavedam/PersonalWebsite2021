@@ -30,7 +30,7 @@ function About() {
                         </Row>
                     </div>
                 </Col>
-                <Col sm lg="7" md="7" sm="7" style={{textAlign: "left", marginTop: "60px"}}>
+                <Col lg="7" md="7" sm="7" style={{textAlign: "left", marginTop: "60px"}}>
                     <h4 style={{fontFamily: "Bungee", marginTop: "15px", padding: "10px", color: userData.theme.headingTextColor}}>About Me</h4>
                     <p style={{padding: "10px", fontSize: "20px", fontFamily: "Karla", color: userData.theme.bodyTextColor}}>
                         {userData.aboutMe.paragraphOne}

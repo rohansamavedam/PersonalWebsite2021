@@ -1,6 +1,5 @@
 import './App.css';
-import { useContext, useState } from 'react';
-import Context from './store/context';
+import { useState } from 'react';
 import { Navbar, Nav, Container, Row, Col } from 'react-bootstrap';
 import { Switch, Route, BrowserRouter as Router, NavLink } from "react-router-dom";
 import About from './Pages/About/About';
@@ -34,17 +33,14 @@ const darkTheme = {
 }
 
 function App() {
-
   const [state, setState] = useState({themeMode: 'dark'})
 
   const toggleDarkTheme = () => {
-    console.log("here")
     userData.theme = darkTheme
     setState({themeMode: 'dark'})
   }
   
   const toggleLightTheme = () => {
-    console.log("now here")
     userData.theme = lightTheme
     setState({themeMode: 'light'})
   }

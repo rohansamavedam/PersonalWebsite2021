@@ -1,6 +1,3 @@
-import React, {useContext} from 'react';
-import Context from './store/context';
-
 const UserData = {
     theme: {
         bodyTextColor: "#edf2f4",
