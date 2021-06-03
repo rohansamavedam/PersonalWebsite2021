@@ -32,11 +32,17 @@ function About() {
                 </Col>
                 <Col lg="7" md="7" sm="7" style={{textAlign: "left", marginTop: "60px"}}>
                     <h4 style={{fontFamily: "Bungee", marginTop: "15px", padding: "10px", color: userData.theme.headingTextColor}}>About Me</h4>
-                    <p style={{padding: "10px", fontSize: "20px", fontFamily: "Karla", color: userData.theme.bodyTextColor}}>
+                    <p style={{padding: "10px", fontSize: "18px", fontFamily: "Karla", color: userData.theme.bodyTextColor}}>
                         {userData.aboutMe.paragraphOne}
                     </p>
-                    <p style={{padding: "10px", fontSize: "20px", fontFamily: "Karla", color: userData.theme.bodyTextColor}}>
+                    <p style={{padding: "10px", fontSize: "18px", fontFamily: "Karla", color: userData.theme.bodyTextColor}}>
                         {userData.aboutMe.paragraphTwo}
+                    </p>
+                    <p style={{padding: "10px", fontSize: "18px", fontFamily: "Karla", color: userData.theme.bodyTextColor}}>
+                        {userData.aboutMe.paragraphThree}
+                    </p>
+                    <p style={{padding: "10px", fontSize: "18px", fontFamily: "Karla", color: userData.theme.bodyTextColor}}>
+                        {userData.aboutMe.paragraphFour}
                     </p>
                 </Col>
             </Row>

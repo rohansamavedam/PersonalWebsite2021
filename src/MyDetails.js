@@ -16,14 +16,30 @@ const UserData = {
         linkedinUrl: "https://www.linkedin.com/in/rohan-samavedam-6a3612156/",
         githubUrl: "https://github.com/rohansamavedam",
         mediumUrl: "https://medium.com/@rohansamavedam",
-        paragraphOne: "I am a Software Engineering Student located in San Jose, California with experience in full stack development. I'm looking for Software Development internship opportunities to be exposed to real life problems and their software solutions.",
-        paragraphTwo: "I've gained experience developing efficient solutions to problems I've faced. My project experience has been both challenging and fun. The logical extension of my education and project experience coupled with my passion for technology is my continued desire to learn and build beautiful software solutions. When I'm not coding, I like to play tennis, go exploring places, play video games and watch movies.",
+        paragraphOne: "👋 Hi! I’m Rohan. I’m a graduating senior at San Jose State University studying Software Engineering. I’ve interned at Amazon during the summer of 2020. I worked on developing an internal-facing website utilizing various AWS services. ",
+        paragraphTwo: "I’ve gained my experience by doing numerous projects and taking up internships. Most recently, I've led a team of 4 people to develop a travel safety mobile application that helps travelers during this covid-19 crisis. ",
+        paragraphThree: "With our technology developing very rapidly, I believe that this is an excellent industry to be a part of. This motivates me to keep thinking of groundbreaking business ideas and it makes me strive to develop efficient solutions to the problems I face. ",
+        paragraphFour: "When I’m not coding, you’ll find me playing tennis 🎾, jamming to hip hop 🎶, cooking gourmet food 🍛, and e-boarding full speed through the trails of Guadalupe park. Feel free to reach out, we can chat over discord about tech or anything else that's fun. 😀",
         email: "rohansamavedam@gmail.com" 
     },
     projects: [
         {
             title: "Spartan Books",
             subTitle: "Full Stack Web Application",
+            shortDescription: "An online used book store platfrom that allows users to buy and sell textbooks.",
+            moreInfoExists: true,
+            longDescriptionParagraphOne: "",
+            longDescriptionParagraphTwo: "",
+            techStack: "Node, React, Axios, Bootstrap, MongoDB",
+            liveUrl: "https://spartanbooks.herokuapp.com/",
+            githubUrl: "https://github.com/rohansamavedam/SpartanBooks-FrontEnd",
+            imageSrcOne: "https://images.pexels.com/photos/1301585/pexels-photo-1301585.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+            imageSrcTwo: "",
+
+        },
+        {
+            title: "TravSafe",
+            subTitle: "React Native Application",
             shortDescription: "An online used book store platfrom that allows users to buy and sell textbooks.",
             moreInfoExists: true,
             longDescriptionParagraphOne: "",

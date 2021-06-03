@@ -7,7 +7,6 @@ import emailjs, { init } from 'emailjs-com';
 init("user_p4BY6hYTNVoE4gzyfsskm");
 
 class Contact extends Component {
-
     constructor() {
         super()
         this.state = {
