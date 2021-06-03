@@ -65,7 +65,7 @@ class Contact extends Component {
 
     render() {
         return (
-      <div style={{marginTop: "60px", paddingBottom: "60px", marginBottom: "0px", height: "auto", backgroundColor: userData.theme.themeColor}}>
+      <div style={{marginTop: "60px", paddingBottom: "60px", height: "100%", backgroundColor: userData.theme.themeColor}}>
             <Container style={{ display: "block"}} >
                 <Row className="justify-content-md-center">
                     <Col lg="10" style={{marginTop: "40px"}}>

@@ -46,7 +46,7 @@ function App() {
   }
 
   return (
-    <div className="App" >
+    <div className="App" style={{backgroundColor: userData.theme.themeColor}}>
       <Router>
         <div style={{ minHeight: "85vh"}}>
           <Navbar expand="lg" fixed="top" style={{backgroundColor: userData.theme.navbarColor, boxShadow: "0px 3px 15px rgba(0,0,0,0.2)"}} className="NavBar">

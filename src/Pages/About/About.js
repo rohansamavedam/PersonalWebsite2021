@@ -6,10 +6,10 @@ import userData from '../../MyDetails';
 
 function About() {
   return (
-      <div style={{marginTop: "60px", paddingBottom: "60px", marginBottom: "0px", height: "auto", backgroundColor: userData.theme.backgroundColor}}>
-          <div style={{backgroundColor: userData.theme.themeColor, width: "400px", height: "100%", position: "absolute"}}>
-          </div>
-          <Container style={{ display: "block", textAlign:"center", paddingBottom: "60px"}} >
+      <div style={{marginTop: "60px", paddingBottom: "60px", backgroundColor: userData.theme.themeColor}}>
+          {/* <div style={{backgroundColor: userData.theme.themeColor, width: "400px", height: "100%", position: "absolute"}}>
+          </div> */}
+          <Container style={{ display: "block", textAlign:"center", paddingBottom: "60px", height: "auto"}} >
             <Row className="justify-content-md-center">
                 <Col sm lg="4" style={{marginTop: "60px"}}>
                     <div style={{textAlign: "center", height: "auto", width: "320px", backgroundColor: userData.theme.cardColor, boxShadow: "0px 3px 15px rgba(0,0,0,0.2)", display: "block", marginLeft: "auto", marginRight: "auto"}}>
