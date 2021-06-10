@@ -24,10 +24,25 @@ const UserData = {
     },
     projects: [
         {
+            title: "TravSafe",
+            subTitle: "React Native Application",
+            shortDescription: "A moblie application that helps users stay updated about the covid-19 safety while they plan their travel.",
+            moreInfoExists: true,
+            longDescriptionParagraphOne: "",
+            longDescriptionParagraphTwo: "",
+            techStack: "React Native, AWS Amplify, API Gateway, Lambda",
+            liveUrl: "https://github.com/TravSafe-FinalYearProject/TravSafe",
+            githubUrl: "https://github.com/TravSafe-FinalYearProject/TravSafe",
+            imageSrcOne: "https://images.pexels.com/photos/434400/pexels-photo-434400.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+            imageSrcTwo: "",
+            readmeUrl: "https://github.com/TravSafe-FinalYearProject/TravSafe/blob/master/README.md",
+
+        },
+        {
             title: "Spartan Books",
             subTitle: "Full Stack Web Application",
             shortDescription: "An online used book store platfrom that allows users to buy and sell textbooks.",
-            moreInfoExists: true,
+            moreInfoExists: false,
             longDescriptionParagraphOne: "",
             longDescriptionParagraphTwo: "",
             techStack: "Node, React, Axios, Bootstrap, MongoDB",
@@ -44,20 +59,6 @@ const UserData = {
         {
             type: "chit-chat",
             chitChat: "There was also a phase where I used PHP and Java extensively to build purposeful web apps. After my internship, serverless caught my attention. Now my goto tech-stack is AWS services in the back-end and React in the front-end."
-        },
-        {
-            title: "TravSafe",
-            subTitle: "React Native Application",
-            shortDescription: "An online used book store platfrom that allows users to buy and sell textbooks.",
-            moreInfoExists: true,
-            longDescriptionParagraphOne: "",
-            longDescriptionParagraphTwo: "",
-            techStack: "Node, React, Axios, Bootstrap, MongoDB",
-            liveUrl: "https://spartanbooks.herokuapp.com/",
-            githubUrl: "https://github.com/rohansamavedam/SpartanBooks-FrontEnd",
-            imageSrcOne: "https://images.pexels.com/photos/434400/pexels-photo-434400.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-            imageSrcTwo: "",
-
         },
         // {
         //     title: "Tour Boi",

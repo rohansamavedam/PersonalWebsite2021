@@ -27,7 +27,7 @@ function Projects() {
                             if (value.chitChat) {
                                 return <Col lg="6" style={{marginTop: "40px"}} key={index}>
                                     <div style={{ height: "100%", display: "block", marginLeft: "auto", marginRight: "auto", boxShadow: "0px 3px 15px rgba(0,0,0,0.2)", textAlign: "center"}}>
-                                        <div style={{display: "block", padding: "40px", paddingTop: "120px"}}>
+                                        <div style={{display: "block", padding: "40px", paddingTop: "80px"}}>
                                             <p style={{fontSize: "18px", fontFamily: "Karla", color: userData.theme.bodyTextColor}}>
                                                 {value.chitChat}
                                             </p>
@@ -35,7 +35,7 @@ function Projects() {
                                     </div> 
                                 </Col>
                             } else {                                       
-                                const navurl = "/dp/" + index;
+                                // const navurl = "/dp/" + index;
                                 return <Col lg="6" style={{marginTop: "40px"}} key={index}>
                                 <div style={{ height: "auto", backgroundColor: userData.theme.cardColor, boxShadow: "0px 3px 15px rgba(0,0,0,0.2)", display: "block", marginLeft: "auto", marginRight: "auto"}}>
                                     <Row>
@@ -62,7 +62,8 @@ function Projects() {
                                                 &nbsp; 
                                                 {
                                                     (value.moreInfoExists === true)
-                                                    ? <Link to = {navurl} style={{color: userData.theme.headingTextColor}}><FaInfo/></Link>
+                                                    ? <a href = {value.readmeUrl} target="blank" style={{color: userData.theme.headingTextColor}}><FaInfo/></a>
+                                                    // ? <Link to = {navurl} style={{color: userData.theme.headingTextColor}}><FaInfo/></Link>
                                                     : <Link aria-disabled="true"></Link>
                                                 }
                                             </p>
