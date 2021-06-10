@@ -1,5 +1,5 @@
 import './App.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Navbar, Nav, Container, Row, Col } from 'react-bootstrap';
 import { Switch, Route, BrowserRouter as Router, NavLink } from "react-router-dom";
 import About from './Pages/About/About';
@@ -7,7 +7,7 @@ import Projects from './Pages/Projects/Projects';
 import Resume from './Pages/Resume/Resume';
 import DynamicProject from './Pages/DynamicProject/DynamicProject';
 import Contact from './Pages/Contact/Contact';
-import { FaLinkedinIn, FaGithub, FaMediumM, FaAdjust } from 'react-icons/fa';
+import { FaLinkedinIn, FaGithub, FaDiscord, FaAdjust } from 'react-icons/fa';
 import userData from "./MyDetails";
 
 const lightTheme = {
@@ -34,6 +34,10 @@ const darkTheme = {
 
 function App() {
   const [state, setState] = useState({themeMode: 'dark'})
+
+  useEffect(() => {
+    document.body.style.zoom = "95%";
+  }, []);
 
   const toggleDarkTheme = () => {
     userData.theme = darkTheme
@@ -97,7 +101,7 @@ function App() {
                   <Col style={{textAlign: "center", fontFamily: "Bungee Hairline"}}>
                     <p style={{color: userData.theme.subHeadingTextColor}}><u><strong>Follow</strong></u></p>
                     <p style={{fontSize: "20px", marginTop: "-6px"}}>
-                      <a href={userData.aboutMe.mediumUrl} target="blank" style={{color: userData.theme.headingTextColor}}><FaMediumM/></a> &nbsp; 
+                      <a href={userData.aboutMe.mediumUrl} target="blank" style={{color: userData.theme.headingTextColor}}><FaDiscord/></a> &nbsp; 
                       <a href={userData.aboutMe.githubUrl} target="blank" style={{color: userData.theme.headingTextColor}}><FaGithub/></a> &nbsp; 
                       <a href={userData.aboutMe.linkedinUrl} target="blank" style={{color: userData.theme.headingTextColor}}><FaLinkedinIn/></a> 
                     </p>

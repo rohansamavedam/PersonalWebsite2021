@@ -11,11 +11,32 @@ function Projects() {
                 <CustomToast/>
             </div> */}
             <Container style={{ display: "block"}} >
+                <Row className="justify-content-md-center" style={{paddingTop: "10px", width: "100%"}}>
+                    <Col lg="12" style={{marginTop: "20px"}} >
+                        <p style={{ fontSize: "18px", fontFamily: "Karla", color: userData.theme.bodyTextColor, paddingTop: "20px", paddingLeft: "30px", paddingRight: "30px", textAlign: "center"}}>
+                            Below, you’ll find the list of my favourite projects. Click on &nbsp; <button style={{color: userData.theme.headingTextColor, border: "none", backgroundColor: userData.theme.themeColor}}><FaExternalLinkAlt/></button> &nbsp; 
+                            to visit the deployed application, click on &nbsp; <button style={{color: userData.theme.headingTextColor, border: "none", backgroundColor: userData.theme.themeColor}}><FaCodeBranch/></button> &nbsp;
+                            to visit the code repository of the project, and click on &nbsp; <button style={{color: userData.theme.headingTextColor, border: "none", backgroundColor: userData.theme.themeColor}}><FaInfo/></button> &nbsp; to know more about that project (architecture design, sequence diagrams, more description).
+                        </p>
+                    </Col>
+                </Row>
                 <Row className="justify-content-md-center">
-                    {
-                        userData.projects.map((value, index) => {
-                            const navurl = "/dp/" + index;
-                        return <Col lg="6" style={{marginTop: "40px"}} key={index}>
+                        {
+                            userData.projects.map((value, index) => {
+
+                            if (value.chitChat) {
+                                return <Col lg="6" style={{marginTop: "40px"}} key={index}>
+                                    <div style={{ height: "100%", display: "block", marginLeft: "auto", marginRight: "auto", boxShadow: "0px 3px 15px rgba(0,0,0,0.2)", textAlign: "center"}}>
+                                        <div style={{display: "block", padding: "40px", paddingTop: "120px"}}>
+                                            <p style={{fontSize: "18px", fontFamily: "Karla", color: userData.theme.bodyTextColor}}>
+                                                {value.chitChat}
+                                            </p>
+                                        </div>
+                                    </div> 
+                                </Col>
+                            } else {                                       
+                                const navurl = "/dp/" + index;
+                                return <Col lg="6" style={{marginTop: "40px"}} key={index}>
                                 <div style={{ height: "auto", backgroundColor: userData.theme.cardColor, boxShadow: "0px 3px 15px rgba(0,0,0,0.2)", display: "block", marginLeft: "auto", marginRight: "auto"}}>
                                     <Row>
                                         <Col>
@@ -55,10 +76,10 @@ function Projects() {
                                         <p style={{color: userData.theme.bodyTextColor}}>{value.shortDescription}</p>
                                         <p style={{color: userData.theme.bodyTextColor}}><u>Tech Stack</u>: {value.techStack}</p>
                                     </div>
-                                </div>
-                            </Col>
-                        })
-                    }
+                                </div> </Col> 
+                                }
+                            })
+                        }
                 </Row>
             </Container>
         </div>

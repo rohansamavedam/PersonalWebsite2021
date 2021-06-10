@@ -15,11 +15,11 @@ const UserData = {
         userTitle: "Software Engineering Student",
         linkedinUrl: "https://www.linkedin.com/in/rohan-samavedam-6a3612156/",
         githubUrl: "https://github.com/rohansamavedam",
-        mediumUrl: "https://medium.com/@rohansamavedam",
+        mediumUrl: "https://discord.gg/e7jfdafV",
         paragraphOne: "👋 Hi! I’m Rohan. I’m a graduating senior at San Jose State University studying Software Engineering. I’ve interned at Amazon during the summer of 2020. I worked on developing an internal-facing website utilizing various AWS services. ",
         paragraphTwo: "I’ve gained my experience by doing numerous projects and taking up internships. Most recently, I've led a team of 4 people to develop a travel safety mobile application that helps travelers during this covid-19 crisis. ",
         paragraphThree: "With our technology developing very rapidly, I believe that this is an excellent industry to be a part of. This motivates me to keep thinking of groundbreaking business ideas and it makes me strive to develop efficient solutions to the problems I face. ",
-        paragraphFour: "When I’m not coding, you’ll find me playing tennis 🎾, jamming to hip hop 🎶, cooking gourmet food 🍛, and e-boarding full speed through the trails of Guadalupe park. Feel free to reach out, we can chat over discord about tech or anything else that's fun. 😀",
+        paragraphFour: "When I’m not coding, you’ll find me playing tennis 🎾, jamming to hip hop 🎶, cooking gourmet food 🍛, and e-boarding full speed through the trails of Guadalupe park. Feel free to reach out, join my discord channel and we can talk about tech or anything else that's fun. 😀",
         email: "rohansamavedam@gmail.com" 
     },
     projects: [
@@ -38,6 +38,14 @@ const UserData = {
 
         },
         {
+            type: "chit-chat",
+            chitChat: "During the last 4 years, I’ve worked on numerous projects. I started off with baby steps by doing front facing applications using Javascript, HTML, and CSS. Slowly, I expanded my palette to use Node.js, React, and Databases."
+        },
+        {
+            type: "chit-chat",
+            chitChat: "There was also a phase where I used PHP and Java extensively to build purposeful web apps. After my internship, serverless caught my attention. Now my goto tech-stack is AWS services in the back-end and React in the front-end."
+        },
+        {
             title: "TravSafe",
             subTitle: "React Native Application",
             shortDescription: "An online used book store platfrom that allows users to buy and sell textbooks.",
@@ -47,24 +55,24 @@ const UserData = {
             techStack: "Node, React, Axios, Bootstrap, MongoDB",
             liveUrl: "https://spartanbooks.herokuapp.com/",
             githubUrl: "https://github.com/rohansamavedam/SpartanBooks-FrontEnd",
-            imageSrcOne: "https://images.pexels.com/photos/1301585/pexels-photo-1301585.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+            imageSrcOne: "https://images.pexels.com/photos/434400/pexels-photo-434400.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
             imageSrcTwo: "",
 
         },
-        {
-            title: "Tour Boi",
-            subTitle: "Front End Web Application",
-            shortDescription: "A web application that allows user to search, research, and plan a socially conscious adventure.",
-            moreInfoExists: false,
-            longDescriptionParagraphOne: "",
-            longDescriptionParagraphTwo: "",
-            techStack: "JavaScript, JQuery, AJAX, HTML, CSS, APIs",
-            liveUrl: "https://tourboi.herokuapp.com/",
-            githubUrl: "https://github.com/rohansamavedam/Tour-Boi",
-            imageSrcOne: "https://images.pexels.com/photos/2859169/pexels-photo-2859169.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-            imageSrcTwo: "",
+        // {
+        //     title: "Tour Boi",
+        //     subTitle: "Front End Web Application",
+        //     shortDescription: "A web application that allows user to search, research, and plan a socially conscious adventure.",
+        //     moreInfoExists: false,
+        //     longDescriptionParagraphOne: "",
+        //     longDescriptionParagraphTwo: "",
+        //     techStack: "JavaScript, JQuery, AJAX, HTML, CSS, APIs",
+        //     liveUrl: "https://tourboi.herokuapp.com/",
+        //     githubUrl: "https://github.com/rohansamavedam/Tour-Boi",
+        //     imageSrcOne: "https://images.pexels.com/photos/2859169/pexels-photo-2859169.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+        //     imageSrcTwo: "",
 
-        },
+        // },
         {
             title: "MyRoomie-Roommate Finder",
             subTitle: "Full Stack Web Application",
@@ -153,7 +161,8 @@ const UserData = {
                 degree: "Bachelors of Science in Software Engineering",
                 college: "San Jose State University",
                 timeline: "Aug 2017 - Aug 2021",
-                description: "The Bachelor of Science degree in Software Engineering (BSSE) goes beyond programming to include engineering methodologies and hands-on project experience. The program prepares students to become qualified engineers for IT leading companies in Silicon Valley and international engineering market by providing them with state-of-the-art engineering methods, emergent technologies, team work experience, and solutions so they are capable to address design, coding, validation, and measurement issues for the construction of large-scale computer systems and software applications in the real world."
+                description: "The Bachelor of Science degree in Software Engineering (BSSE) goes beyond programming to include engineering methodologies and hands-on project experience. The program prepares students to become qualified engineers for IT leading companies in Silicon Valley and international engineering market by providing them with state-of-the-art engineering methods, emergent technologies, team work experience, and solutions so they are capable to address design, coding, validation, and measurement issues for the construction of large-scale computer systems and software applications in the real world.",
+                coursework: "Relevant coursework: Data Structures and Algorithms, Object Oriented Design, Database Management Systems, Server Side Programming, Computer Networks, Software Quality Engineering, Enterprise Software Platforms, Software Engineering Methodologies"
             }
         ],
     skills:

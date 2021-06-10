@@ -66,8 +66,15 @@ class Contact extends Component {
         return (
       <div style={{marginTop: "60px", paddingBottom: "60px", height: "100%", backgroundColor: userData.theme.themeColor}}>
             <Container style={{ display: "block"}} >
+                <Row className="justify-content-md-center" style={{paddingTop: "10px", width: "100%"}}>
+                    <Col lg="12" style={{marginTop: "20px"}} >
+                        <p style={{ fontSize: "18px", fontFamily: "Karla", color: userData.theme.bodyTextColor, paddingTop: "20px", paddingLeft: "35px", paddingRight: "30px", textAlign: "center"}}>
+                           Fill the form below (or) join my discord server 👉 <a href="https://discord.gg/e7jfdafV" target="blank">here</a>.
+                        </p>
+                    </Col>
+                </Row>
                 <Row className="justify-content-md-center">
-                    <Col lg="10" style={{marginTop: "40px"}}>
+                    <Col lg="10" style={{marginTop: "30px"}}>
                         <div style={{ height: "auto", backgroundColor: userData.theme.cardColor, boxShadow: "0px 3px 15px rgba(0,0,0,0.2)", display: "block", marginLeft: "auto", marginRight: "auto", padding: "50px"}}>
                             <div style={{paddingLeft: "auto", paddingRight: "auto", paddingBottom: "30px", fontFamily: "Bungee Hairline", fontSize: "18px", textAlign: "center", color: userData.theme.subHeadingTextColor}}>
                                 <p><u><strong>Get in touch</strong></u>:</p>

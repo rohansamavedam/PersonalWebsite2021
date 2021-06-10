@@ -65,7 +65,8 @@ function Resume() {
                                                 </Col>
                                                 <Col lg={8}>
                                                     <ul>
-                                                        <li style={{fontFamily: "Karla", fontSize: "17px", color: userData.theme.bodyTextColor}}>{value.description}</li>
+                                                        <li style={{fontFamily: "Karla", fontSize: "17px", color: userData.theme.bodyTextColor}}>{value.description}</li> <br></br>
+                                                        <li style={{fontFamily: "Karla", fontSize: "17px", color: userData.theme.bodyTextColor}}>{value.coursework}</li>
                                                     </ul>
                                                 </Col>
                                             </Row>
