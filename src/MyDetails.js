@@ -16,9 +16,9 @@ const UserData = {
         linkedinUrl: "https://www.linkedin.com/in/rohan-samavedam-6a3612156/",
         githubUrl: "https://github.com/rohansamavedam",
         mediumUrl: "https://discord.gg/e7jfdafV",
-        paragraphOne: "👋 Hi! I’m Rohan. I’m a graduating senior at San Jose State University studying Software Engineering. I’ve interned at Amazon during the summer of 2020. I worked on developing an internal-facing website utilizing various AWS services. ",
+        paragraphOne: "👋 Hi! I’m Rohan. I’m a graduating senior at San Jose State University studying Software Engineering. I’ve interned at Amazon during the summer of 2020, where I worked with Identity team to develop a redirect component in their product flow utilizing various AWS services. ",
         paragraphTwo: "I’ve gained my experience by doing numerous projects and taking up internships. Most recently, I've led a team of 4 people to develop a travel safety mobile application that helps travelers during this covid-19 crisis. ",
-        paragraphThree: "With our technology developing very rapidly, I believe that this is an excellent industry to be a part of. This motivates me to keep thinking of groundbreaking business ideas and it makes me strive to develop efficient solutions to the problems I face. ",
+        paragraphThree: "With our technology developing very rapidly, I believe that this is an excellent industry to be a part of. This motivates me to keep thinking of groundbreaking business ideas and strive to develop efficient solutions to the problems I face. ",
         paragraphFour: "When I’m not coding, you’ll find me playing tennis 🎾, jamming to hip hop 🎶, cooking gourmet food 🍛, and e-boarding full speed through the trails of Guadalupe park. Feel free to reach out, join my discord channel and we can talk about tech or anything else that's fun. 😀",
         email: "rohansamavedam@gmail.com" 
     },
