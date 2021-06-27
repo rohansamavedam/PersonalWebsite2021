@@ -4,6 +4,7 @@ import {  } from 'react-icons/fa';
 import userData from '../../MyDetails';
 import { Component } from 'react';
 import emailjs, { init } from 'emailjs-com';
+import validator from 'validator';
 init("user_p4BY6hYTNVoE4gzyfsskm");
 
 class Contact extends Component {
@@ -44,7 +45,7 @@ class Contact extends Component {
     }
 
     sendEmail(firstname, lastname, email, subject, message) {
-        if(firstname && lastname && email && subject && message) {
+        if(firstname && lastname && email && subject && message && validator.isEmail(email)) {
             emailjs.send("service_iurre3k", "template_2myxps8", {
                 from_name: firstname + " " + lastname,
                 subject: subject,
@@ -58,7 +59,11 @@ class Contact extends Component {
             })
             this.setState({firstname: '', lastname: '', email: '', subject: '', message: ''})
         } else {
-            alert("All Fields are Required")
+            if (validator.isEmail(email)){
+                alert("All Fields are Required")
+            } else {
+                alert("Improper email format, please try a different email")
+            }
         }
     }
 
